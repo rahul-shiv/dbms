@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Animal</title>
+
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'styles/tourist.css') }}">
+
+      <link rel="shortcut icon" href="{{ url_for('static', filename = 'paw.png') }}" >
+
+
+
+  </head>
+
+  <body>
+
+          <a href="{{ url_for('home', filename = 'homepage.html') }}"><img src="{{ url_for('static', filename = 'home.png') }}"class="home" ></img></a>
+          <img id= "background" src= "{{ url_for('static', filename = 'cubs.jpg') }}"> </img>
+          <center>
+          <p id="welcome"> WELCOME </p>
+          <pre id="welcome" style="font-size:20px;margin-top: -20px;">Please    enter    details:</pre>
+          <form action ="/addanimal" method="get">
+              <div id="form">
+                <br>
+                <center>
+                <p> Add Animal </p>
+                Species: <input type="text" name= "species" ><br><br>
+                Name : <input type="text" name= "name" ><br><br>
+                Zone pin : <input type="text" name= "zone_pin" ><br><br>
+                Gender : <select name="gender">
+                  <option value="M">Male</option>
+                  <option value="F">Female</option>
+                </select><br><br><br>
+
+                <div class="box-3">
+                    <div class="btn btn-three">
+                         <input type="submit" id="addanimal" value="ADD ANIMAL"/>
+                      </div>
+                </div>
+            </form>
+            <form action="/viewanimal" method="get">
+                <br>
+                <p> View Animal </p>
+                Species: <input type="text" name= "species" ><br><br>
+                Name : <input type="text" name= "Aname" ><br><br>
+                </select>
+                <div class="box-3">
+                    <div class="btn btn-three">
+                        <input type="submit" id="addanimal" value="VIEW ANIMAL"/>
+                      </div>
+                </div>
+
+              </center>
+              </div>
+          </form>
+          </center>
+
+  </body>
+
+</html>

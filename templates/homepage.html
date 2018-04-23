@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Wildlife Sanctuary</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'styles/homepage.css') }}">
+		<link rel="shortcut icon" href="{{ url_for('static', filename = 'paw.png') }}" >
+	</head>
+
+	</body>
+		<div class="background">
+			<img class= "b1" src="{{ url_for('static', filename = 'reddeer.jpg') }}" alt="red deer">
+			<p class= "logo">WELCOME TO <BR> WILDLIFE SANCTUARY</p>
+			<p class="heading" style="padding-top:20px"><b>Welcome to Wildlife Sanctuary.<br>Well acclaimed natural habitat <br>Approved by Nat Geo</b></p>
+
+			<div class="share" >
+				<img src="{{ url_for('static', filename = 'insta.png') }}" alt="insta">
+				<img src="{{ url_for('static', filename = 'twitter.png') }}" alt="twitter">
+				<img src="{{ url_for('static', filename = 'reddit.png') }}" alt="reddit">
+				<img src="{{ url_for('static', filename = 'fb.png') }}" alt="fb">
+			</div>
+
+			<div class="menuicon">&#9776;</div>
+			<div class="overlay">
+				<div class="menu">
+					<h1 style="font-size:60px;">MENU</h1><br>
+					<a  href="{{ url_for('tourist', filename = 'tourist.html') }}">Tourist   bookings</a><br><br><br>
+					<a  href="{{ url_for('employee', filename = 'employee.html') }}">Employee   Details</a><br><br><br>
+					<a  href="{{ url_for('animal', filename = 'animal.html') }}">Animal   data</a><br><br><br>
+					<a  href="{{ url_for('bill', filename = 'bill.html') }}">Print   Bill</a><br>
+
+				</div>
+			</div>
+
+		</div>
+
+	</body>
+
+</html>
